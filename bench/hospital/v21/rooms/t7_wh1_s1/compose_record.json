@@ -1,0 +1,255 @@
+{
+ "layout": "layouts/t7_wh1_s1.json",
+ "seed": 0,
+ "commit": "653d91e182011f357cf1644013cc94ddf194d349",
+ "assets": {
+  "pallet_n": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/pallet_block_a06/simready_usd/sm_pallet_block_a06_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.500449925661087,
+    0.6000000238418579
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/pallet_block_a06_s1_1_1.4.usda",
+   "sha256": "52a51530c80a247b",
+   "asset": "pallet_block_a06"
+  },
+  "pallet_s": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/pallet_block_a02/simready_usd/sm_pallet_block_a02_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.5001156330108643,
+    0.6000000238418579
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/pallet_block_a02_s1_1_1.4.usda",
+   "sha256": "c4d82535fc1a6311",
+   "asset": "pallet_block_a02"
+  },
+  "jack": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/palletJack_lowProfile_a01/simready_usd/sm_palletJack_lowProfile_a01_01.usd",
+   "rigid_bodies": 8,
+   "joints": 7,
+   "articulation_root": false,
+   "half_xy": [
+    0.32655394077301025,
+    0.8148540481925011
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/palletJack_lowProfile_a01.usda",
+   "sha256": "75b1c5edb1f11c92",
+   "asset": "palletJack_lowProfile_a01"
+  },
+  "box_n1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/box_glove_a01/simready_usd/sm_box_glove_a01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.04899370105957335,
+    0.03223202354286525
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/box_glove_a01_s0.55_0.55_0.55.usda",
+   "sha256": "7017ee2b741e849f",
+   "asset": "box_glove_a01"
+  },
+  "box_n2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/box_glove_a01/simready_usd/sm_box_glove_a01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.04899370105957335,
+    0.03223202354286525
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/box_glove_a01_s0.55_0.55_0.55.usda",
+   "sha256": "7017ee2b741e849f",
+   "asset": "box_glove_a01"
+  },
+  "box_s1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/box_glove_a01/simready_usd/sm_box_glove_a01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.04899370105957335,
+    0.03223202354286525
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/box_glove_a01_s0.55_0.55_0.55.usda",
+   "sha256": "7017ee2b741e849f",
+   "asset": "box_glove_a01"
+  },
+  "box_s2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/box_glove_a01/simready_usd/sm_box_glove_a01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.04899370105957335,
+    0.03223202354286525
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/box_glove_a01_s0.55_0.55_0.55.usda",
+   "sha256": "7017ee2b741e849f",
+   "asset": "box_glove_a01"
+  },
+  "shelf_a": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/shelve_steel_heavyDuty_a06/simready_usd/sm_shelve_steel_heavyDuty_a06_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.45980650186538696,
+    0.3074047863483429
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/shelve_steel_heavyDuty_a06.usda",
+   "sha256": "38b951ffd4a4d6ce",
+   "asset": "shelve_steel_heavyDuty_a06"
+  },
+  "shelf_b": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/shelve_steel_heavyDuty_a06/simready_usd/sm_shelve_steel_heavyDuty_a06_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "articulation_root": false,
+   "half_xy": [
+    0.45980650186538696,
+    0.3074047863483429
+   ],
+   "wrapper": "rooms/t7_wh1_s1/wrappers/shelve_steel_heavyDuty_a06.usda",
+   "sha256": "38b951ffd4a4d6ce",
+   "asset": "shelve_steel_heavyDuty_a06"
+  }
+ },
+ "placed": {
+  "pallet_n": {
+   "xyz": [
+    1.6,
+    5.7,
+    0.0
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    0.73135,
+    0.682
+   ],
+   "how": "anchor"
+  },
+  "pallet_s": {
+   "xyz": [
+    1.4,
+    4.02,
+    0.0
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    0.68835,
+    0.72537
+   ],
+   "how": "anchor"
+  },
+  "jack": {
+   "xyz": [
+    4.55,
+    4.7,
+    0.0
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    -0.66913,
+    0.74314
+   ],
+   "how": "anchor"
+  },
+  "box_n1": {
+   "xyz": [
+    1.35,
+    5.98,
+    0.45
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    0.0349,
+    0.99939
+   ],
+   "how": "anchor"
+  },
+  "box_n2": {
+   "xyz": [
+    1.85,
+    5.98,
+    0.45
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    0.0349,
+    0.99939
+   ],
+   "how": "anchor"
+  },
+  "box_s1": {
+   "xyz": [
+    1.15,
+    4.3,
+    0.45
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    -0.02618,
+    0.99966
+   ],
+   "how": "anchor"
+  },
+  "box_s2": {
+   "xyz": [
+    1.65,
+    4.3,
+    0.45
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    -0.02618,
+    0.99966
+   ],
+   "how": "anchor"
+  },
+  "shelf_a": {
+   "xyz": [
+    11.3,
+    6.4,
+    0.0
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    0.70711,
+    0.70711
+   ],
+   "how": "anchor"
+  },
+  "shelf_b": {
+   "xyz": [
+    11.3,
+    3.4,
+    0.0
+   ],
+   "q_xyzw": [
+    0.0,
+    0.0,
+    0.70711,
+    0.70711
+   ],
+   "how": "anchor"
+  }
+ },
+ "placement_success": true,
+ "room_usd": "rooms/t7_wh1_s1/room.usd",
+ "seconds": 2.5
+}
