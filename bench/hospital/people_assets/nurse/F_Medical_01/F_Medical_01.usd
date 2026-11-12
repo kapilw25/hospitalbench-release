@@ -1,0 +1,10 @@
+#usda 1.0
+(
+    defaultPrim = "F_Medical_01"
+)
+
+def Xform "F_Medical_01" (
+    prepend references = @https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.1/Isaac/People/Characters/F_Medical_01/F_Medical_01.usd@</Root>
+)
+{
+}
