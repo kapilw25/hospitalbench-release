@@ -119,7 +119,10 @@ def run_hist(W, K, rec, out, spent_before, cap, ep, total_s=TOTAL_SIM_S, usd_sto
         try: tool, args = ep.step(content)
         except Exception as e: stop = f"wire_error: {e}"; reason = "wire_error"; tool, args = None, None
         wall_llm = round(time.time() - t0, 1)
-        last = json.loads(open(os.path.join(out, "claude", "claude_cli_calls.jsonl")).read().splitlines()[-1])
+        # 2026-11-12 ~02:55 UTC: m2cal_sol_t1_s0_r101x crashed here (IndexError, LANE_CRASH exit 70) when the first model call failed before
+        # any call was logged; an empty call log now reads as no call (cost 0) so the walk ends as wire_error with its log, as later calls do
+        _cl = open(os.path.join(out, "claude", "claude_cli_calls.jsonl")).read().splitlines()
+        last = json.loads(_cl[-1]) if _cl else {}
         cost = float(last.get("total_cost_usd") or 0); spent += cost; us = last.get("usage") or {}
         cr, cw, it = us.get("cache_read_input_tokens", 0) or 0, us.get("cache_creation_input_tokens", 0) or 0, us.get("input_tokens", 0) or 0
         row = dict(call=n, sub_task=R.cur, tool=tool, args=args if tool else None, reply=last.get("result_text"), cost_usd=round(cost, 5),

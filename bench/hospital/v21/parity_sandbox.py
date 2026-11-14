@@ -31,7 +31,7 @@ class ParityEp:
                                   stderr=open(os.path.join(log_dir, "parity_host.err"), "w"), text=True, env={"PATH": "/usr/bin:/bin", "HOME": self.scratch, "OMP_NUM_THREADS": "4"})
         r = self._recv()
         if "violation" in r: self.violation = r["violation"]; raise RuntimeError("parity gate violation: " + r["violation"])
-        self._send(dict(op="init", task=task, state=state, system=system, sub_base=int(os.environ.get("P03_PARITY_SUB_BASE", "0")), dev=os.environ.get("P03_PARITY_DEV", ""))); r = self._recv()   # sub_base: DEVELOPMENT ONLY (a lone --sub k run numbers its window 1); 0 in every proof run
+        self._send(dict(op="init", task=task, state=state, system=system, sub_base=int(os.environ.get("P03_PARITY_SUB_BASE", "0")), dev=os.environ.get("P03_PARITY_DEV", ""), mem=(json.load(open(os.environ["P03_START_MEMORY"])) if os.environ.get("P03_START_MEMORY") else None))); r = self._recv()   # sub_base: DEVELOPMENT ONLY (a lone --sub k run numbers its window 1); 0 in every proof run
         if not r.get("ok"): raise RuntimeError("parity host init failed: " + json.dumps(r)[:600])
 
     def _send(self, o): self.p.stdin.write(json.dumps(o) + "\n"); self.p.stdin.flush()
@@ -43,7 +43,9 @@ class ParityEp:
 
     def step(self, content):
         self.n += 1; t0 = time.time()
-        self._send(dict(op="step", content=content)); r = self._recv()
+        _m = dict(op="step", content=content)
+        if getattr(self, "priv_fn", None) is not None: _m["priv"] = self.priv_fn()          # PRIVILEGED-STATE mode (P03_PARITY_DEV token 'priv', robot development only, set by the runner): exact simulator facts converted into the odometry frame the tools use; never set for a model
+        self._send(_m); r = self._recv()
         if "violation" in r:
             self.violation = r["violation"]; self._log(None, {}, r); raise RuntimeError("parity gate violation: " + r["violation"])
         if "error" in r:
