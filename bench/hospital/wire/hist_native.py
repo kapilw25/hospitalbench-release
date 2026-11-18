@@ -18,9 +18,11 @@ FUNCTION_RESPONSE = True      # a user turn that follows a functionCall turn ope
 FUNCTION_MODE = "AUTO"        # functionCallingConfig.mode.  ANY (forced call) switched thinking OFF (0 thought tokens); AUTO keeps it (1,956 thought tokens, STOP) -- measured 2026-10-30
 
 _REPL = [
-    ('text, mu, extra = NA.read_openai(d) if self.provider == "openai" else NA.read_gemini(d)',
+    ('text, mu, extra = (read_anthropic(d) if self.provider == "anthropic" else NA.read_openai(d) if self.provider == "openai" else NA.read_gemini(d))',
      'text, mu, extra = NA.read_gemini(d); parts = ((d.get("candidates") or [{}])[0].get("content") or {}).get("parts") or []; fcs = [p["functionCall"] for p in parts if "functionCall" in p]\n'
      '            extra.update(finish_reason=extra.get("status"), thoughts_tokens=mu["reasoning"], function_calls=len(fcs), function_call_name=(fcs[0]["name"] if fcs else None))'),
+    ('tier = d.get("service_tier") if self.provider == "openai" else ("flex" if self.flex else None)',
+     'tier = ((d.get("usageMetadata") or {}).get("serviceTier") or "").lower() or None'),      # Q240 (2026-11-16): log the tier the RESPONSE names (usageMetadata.serviceTier), not the one asked for; a flex request answered on standard is priced standard
     ('if self.provider == "gemini" and not text.strip():', 'if self.provider == "gemini" and not text.strip() and not fcs:'),
     ('self._log_call(text, mu, c, None)', 'self._log_call(json.dumps({"tool": fcs[0]["name"], "arguments": fcs[0].get("args") or {}}) if fcs else text, mu, c, None)'),
     ('self.turns = turns + [("assistant", text)]\n            call = CS.parse(text)\n            return call if call else (None, text)',
