@@ -1,0 +1,162 @@
+{
+ "layout": "layouts/t4_ward.json",
+ "commit": "653d91e182011f357cf1644013cc94ddf194d349",
+ "assets": {
+  "bed1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/bed_hospital_standard_a01/simready_usd/sm_bed_hospital_standard_a01_01.usd",
+   "rigid_bodies": 11,
+   "joints": 10,
+   "wrapper": "rooms/t4_ward/wrappers/bed_hospital_standard_a01.usda",
+   "sha256": "a5ab1af68a3204f3",
+   "asset": "bed_hospital_standard_a01"
+  },
+  "bed2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/bed_hospital_standard_a01/simready_usd/sm_bed_hospital_standard_a01_01.usd",
+   "rigid_bodies": 11,
+   "joints": 10,
+   "wrapper": "rooms/t4_ward/wrappers/bed_hospital_standard_a01.usda",
+   "sha256": "a5ab1af68a3204f3",
+   "asset": "bed_hospital_standard_a01"
+  },
+  "bed3": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/bed_hospital_standard_a01/simready_usd/sm_bed_hospital_standard_a01_01.usd",
+   "rigid_bodies": 11,
+   "joints": 10,
+   "wrapper": "rooms/t4_ward/wrappers/bed_hospital_standard_a01.usda",
+   "sha256": "a5ab1af68a3204f3",
+   "asset": "bed_hospital_standard_a01"
+  },
+  "table_w": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/table_bedside_b01/simready_usd/sm_table_bedside_b01_01.usd",
+   "rigid_bodies": 14,
+   "joints": 13,
+   "wrapper": "rooms/t4_ward/wrappers/table_bedside_b01.usda",
+   "sha256": "dc0df4cb3213d750",
+   "asset": "table_bedside_b01"
+  },
+  "table_e": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/table_bedside_b01/simready_usd/sm_table_bedside_b01_01.usd",
+   "rigid_bodies": 14,
+   "joints": 13,
+   "wrapper": "rooms/t4_ward/wrappers/table_bedside_b01.usda",
+   "sha256": "dc0df4cb3213d750",
+   "asset": "table_bedside_b01"
+  },
+  "light": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/light_head_bed_a01/simready_usd/sm_light_head_bed_a01_01.usd",
+   "rigid_bodies": 3,
+   "joints": 2,
+   "wrapper": "rooms/t4_ward/wrappers/light_head_bed_a01.usda",
+   "sha256": "a50544f210798dc8",
+   "asset": "light_head_bed_a01"
+  },
+  "crash": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/trolley_emergency_a01/simready_usd/sm_trolley_emergency_a01_01.usd",
+   "rigid_bodies": 17,
+   "joints": 16,
+   "wrapper": "rooms/t4_ward/wrappers/trolley_emergency_a01.usda",
+   "sha256": "b9bcba8062ffb6f5",
+   "asset": "trolley_emergency_a01"
+  },
+  "pole": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/IV_pole_b01/simready_usd/sm_IV_pole_b01_01.usd",
+   "rigid_bodies": 22,
+   "joints": 21,
+   "wrapper": "rooms/t4_ward/wrappers/IV_pole_b01.usda",
+   "sha256": "08aff662f15f8dfc",
+   "asset": "IV_pole_b01"
+  },
+  "screen": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/screen_hospital_b01/simready_usd/sm_screen_hospital_b01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "wrapper": "rooms/t4_ward/wrappers/screen_hospital_b01.usda",
+   "sha256": "4992e472dc8cdc8c",
+   "asset": "screen_hospital_b01"
+  }
+ },
+ "placed": {
+  "bed1": {
+   "xyz": [
+    1.2,
+    4.0,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "bed2": {
+   "xyz": [
+    4.8,
+    4.0,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "bed3": {
+   "xyz": [
+    8.4,
+    4.0,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "table_w": {
+   "xyz": [
+    3.62,
+    4.75,
+    0.0
+   ],
+   "yaw": 180,
+   "scale": 1.0
+  },
+  "table_e": {
+   "xyz": [
+    5.98,
+    4.75,
+    0.0
+   ],
+   "yaw": 180,
+   "scale": 1.0
+  },
+  "light": {
+   "xyz": [
+    4.8,
+    5.99,
+    1.55
+   ],
+   "yaw": -90,
+   "scale": 1.0
+  },
+  "crash": {
+   "xyz": [
+    2.6,
+    0.75,
+    0.0
+   ],
+   "yaw": 180,
+   "scale": 0.9
+  },
+  "pole": {
+   "xyz": [
+    4.8,
+    0.7,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 0.75
+  },
+  "screen": {
+   "xyz": [
+    1.3,
+    2.4,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 0.25
+  }
+ },
+ "seconds": 4.5
+}

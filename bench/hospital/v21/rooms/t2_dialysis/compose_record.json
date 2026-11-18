@@ -1,0 +1,179 @@
+{
+ "layout": "layouts/t2_dialysis.json",
+ "commit": "653d91e182011f357cf1644013cc94ddf194d349",
+ "assets": {
+  "machine1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/hemodialysis_machine_a01/simready_usd/sm_hemodialysis_machine_a01_01.usd",
+   "rigid_bodies": 18,
+   "joints": 17,
+   "wrapper": "rooms/t2_dialysis/wrappers/hemodialysis_machine_a01.usda",
+   "sha256": "f7c7bc6f757e634a",
+   "asset": "hemodialysis_machine_a01"
+  },
+  "stand1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/blood_line_a01/simready_usd/sm_blood_line_a01_01.usd",
+   "rigid_bodies": 22,
+   "joints": 21,
+   "wrapper": "rooms/t2_dialysis/wrappers/blood_line_a01.usda",
+   "sha256": "0ea81a17c6dd8606",
+   "asset": "blood_line_a01"
+  },
+  "chair1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/chair_patient_mobile_a01/simready_usd/sm_chair_patient_mobile_a01_01.usd",
+   "rigid_bodies": 9,
+   "joints": 8,
+   "wrapper": "rooms/t2_dialysis/wrappers/chair_patient_mobile_a01.usda",
+   "sha256": "7b3eb4ad2efc5930",
+   "asset": "chair_patient_mobile_a01"
+  },
+  "btrol1": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/trolley_instrument_b01/simready_usd/sm_trolley_instrument_b01_01.usd",
+   "rigid_bodies": 9,
+   "joints": 8,
+   "wrapper": "rooms/t2_dialysis/wrappers/trolley_instrument_b01.usda",
+   "sha256": "93fe4fa277961159",
+   "asset": "trolley_instrument_b01"
+  },
+  "machine2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/hemodialysis_machine_a01/simready_usd/sm_hemodialysis_machine_a01_01.usd",
+   "rigid_bodies": 18,
+   "joints": 17,
+   "wrapper": "rooms/t2_dialysis/wrappers/hemodialysis_machine_a01.usda",
+   "sha256": "f7c7bc6f757e634a",
+   "asset": "hemodialysis_machine_a01"
+  },
+  "stand2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/blood_line_a01/simready_usd/sm_blood_line_a01_01.usd",
+   "rigid_bodies": 22,
+   "joints": 21,
+   "wrapper": "rooms/t2_dialysis/wrappers/blood_line_a01.usda",
+   "sha256": "0ea81a17c6dd8606",
+   "asset": "blood_line_a01"
+  },
+  "chair2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/chair_patient_mobile_a01/simready_usd/sm_chair_patient_mobile_a01_01.usd",
+   "rigid_bodies": 9,
+   "joints": 8,
+   "wrapper": "rooms/t2_dialysis/wrappers/chair_patient_mobile_a01.usda",
+   "sha256": "7b3eb4ad2efc5930",
+   "asset": "chair_patient_mobile_a01"
+  },
+  "btrol2": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/trolley_instrument_b01/simready_usd/sm_trolley_instrument_b01_01.usd",
+   "rigid_bodies": 9,
+   "joints": 8,
+   "wrapper": "rooms/t2_dialysis/wrappers/trolley_instrument_b01.usda",
+   "sha256": "93fe4fa277961159",
+   "asset": "trolley_instrument_b01"
+  },
+  "trolley": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/trolley_instrument_b01/simready_usd/sm_trolley_instrument_b01_01.usd",
+   "rigid_bodies": 9,
+   "joints": 8,
+   "wrapper": "rooms/t2_dialysis/wrappers/trolley_instrument_b01.usda",
+   "sha256": "93fe4fa277961159",
+   "asset": "trolley_instrument_b01"
+  },
+  "bag": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/drainage_a01/simready_usd/sm_drainage_a01_01.usd",
+   "rigid_bodies": 3,
+   "joints": 2,
+   "wrapper": "rooms/t2_dialysis/wrappers/drainage_a01.usda",
+   "sha256": "da0df74c5045f2de",
+   "asset": "drainage_a01"
+  }
+ },
+ "placed": {
+  "machine1": {
+   "xyz": [
+    1.5,
+    2.8,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "stand1": {
+   "xyz": [
+    2.15,
+    2.8,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "chair1": {
+   "xyz": [
+    0.5,
+    0.8,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "btrol1": {
+   "xyz": [
+    1.5,
+    0.9,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "machine2": {
+   "xyz": [
+    4.5,
+    2.8,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "stand2": {
+   "xyz": [
+    5.15,
+    2.8,
+    0.0
+   ],
+   "yaw": 90,
+   "scale": 1.0
+  },
+  "chair2": {
+   "xyz": [
+    5.5,
+    0.8,
+    0.0
+   ],
+   "yaw": 180,
+   "scale": 1.0
+  },
+  "btrol2": {
+   "xyz": [
+    4.5,
+    0.9,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "trolley": {
+   "xyz": [
+    5.5,
+    4.05,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "bag": {
+   "xyz": [
+    5.25,
+    4.05,
+    0.8
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  }
+ },
+ "seconds": 24.2
+}

@@ -1,0 +1,111 @@
+{
+ "layout": "layouts/t4_anesth.json",
+ "commit": "653d91e182011f357cf1644013cc94ddf194d349",
+ "assets": {
+  "machine": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/anesthesia_machine_a01/simready_usd/sm_anesthesia_machine_a01_01.usd",
+   "rigid_bodies": 50,
+   "joints": 49,
+   "wrapper": "rooms/t4_anesth/wrappers/anesthesia_machine_a01.usda",
+   "sha256": "8496776bd1448341",
+   "asset": "anesthesia_machine_a01"
+  },
+  "trolley": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/trolley_instrument_b01/simready_usd/sm_trolley_instrument_b01_01.usd",
+   "rigid_bodies": 9,
+   "joints": 8,
+   "wrapper": "rooms/t4_anesth/wrappers/trolley_instrument_b01.usda",
+   "sha256": "93fe4fa277961159",
+   "asset": "trolley_instrument_b01"
+  },
+  "tray": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/container_system_sterilising_b01/simready_usd/sm_container_system_sterilising_b01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "wrapper": "rooms/t4_anesth/wrappers/container_system_sterilising_b01.usda",
+   "sha256": "3d708bcd22150060",
+   "asset": "container_system_sterilising_b01"
+  },
+  "mask": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/anesthesia_mask_a01/simready_usd/sm_anesthesia_mask_a01_01.usd",
+   "rigid_bodies": 2,
+   "joints": 1,
+   "wrapper": "rooms/t4_anesth/wrappers/anesthesia_mask_a01.usda",
+   "sha256": "a49a1be3d0629413",
+   "asset": "anesthesia_mask_a01"
+  },
+  "syringe": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/syringe_a02/simready_usd/sm_syringe_a02_01.usd",
+   "rigid_bodies": 7,
+   "joints": 7,
+   "wrapper": "rooms/t4_anesth/wrappers/syringe_a02.usda",
+   "sha256": "89e46b63c39422be",
+   "asset": "syringe_a02"
+  },
+  "cannulae": {
+   "url": "https://huggingface.co/datasets/nvidia/simready-assets/resolve/653d91e182011f357cf1644013cc94ddf194d349/cannulae_nasal_a01/simready_usd/sm_cannulae_nasal_a01_01.usd",
+   "rigid_bodies": 1,
+   "joints": 0,
+   "wrapper": "rooms/t4_anesth/wrappers/cannulae_nasal_a01.usda",
+   "sha256": "a5bbc4b599df6b85",
+   "asset": "cannulae_nasal_a01"
+  }
+ },
+ "placed": {
+  "machine": {
+   "xyz": [
+    0.5,
+    2.0,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "trolley": {
+   "xyz": [
+    2.6,
+    3.3,
+    0.0
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "tray": {
+   "xyz": [
+    2.6,
+    3.3,
+    0.752
+   ],
+   "yaw": 0,
+   "scale": 1.3
+  },
+  "mask": {
+   "xyz": [
+    2.4,
+    3.22,
+    0.8
+   ],
+   "yaw": 0,
+   "scale": 0.8
+  },
+  "syringe": {
+   "xyz": [
+    2.54,
+    3.22,
+    0.8
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  },
+  "cannulae": {
+   "xyz": [
+    2.74,
+    3.24,
+    0.8
+   ],
+   "yaw": 0,
+   "scale": 1.0
+  }
+ },
+ "seconds": 3.4
+}
