@@ -9,4 +9,4 @@
 | numpy, SciPy (BSD), Pillow (HPND), OpenCV (Apache-2.0), onnxruntime (MIT), rapidocr-onnxruntime (Apache-2.0) | image handling, the information-only scripted robot | their own licences | no: installed by pip |
 | Provider APIs (Anthropic, OpenAI, Google) | model calls | provider terms; you bring your own key | no |
 
-The code in this repository (everything outside the rows above) is MIT licensed, see [LICENSE](LICENSE). Textures in `bench/hospital/h1_textures` and `bench/hospital/t1_textures` are drawn by the code of this repository.
+The code in this repository (everything outside the rows above) is Apache-2.0 licensed, see [LICENSE](LICENSE). The data (task files, layouts, composition records, trajectories) is CC BY 4.0, see [LICENSE-DATA](LICENSE-DATA). Textures in `bench/hospital/h1_textures` and `bench/hospital/t1_textures` are drawn by the code of this repository.
