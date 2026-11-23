@@ -5,3 +5,5 @@ bench/hospital/logs/
 hospitalbench_rooms_v1.tar.gz
 bench/hospital/v21/rooms/*/room.usd
 .env
+hospitalbench_demos_v1.tar.gz
+demos/
